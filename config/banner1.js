@@ -1,6 +1,6 @@
 import { getDefaultConfig } from '../utils/index.js'
 
-const defaultLayouts = [
+const defaultLayers = [
     getDefaultConfig('img', { height: 162, width: 1728 }),
     getDefaultConfig('img', { height: 159, width: 1696 }),
     getDefaultConfig('img', { height: 165, width: 1760 }),
@@ -19,9 +19,9 @@ const defaultLayouts = [
     getDefaultConfig('img', { height: 156, width: 1664 }),
     getDefaultConfig('img', { height: 156, width: 1664 }),
     getDefaultConfig('img', { height: 156, width: 1664 }),
-    getDefaultConfig('img', { height: 156, width: 1664 }),
+    getDefaultConfig('img', { height: 156, width: 1664, opacity: 0.5 }),
     getDefaultConfig('video', { height: 270, width: 108, translateX: 216 }),
     getDefaultConfig('video', { height: 500, width: 200, translateX: -700 })
 ]
 
-export default defaultLayouts
+export default defaultLayers

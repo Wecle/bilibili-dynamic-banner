@@ -24,6 +24,15 @@ function getDefaultConfig (type = 'img', defaultStyle = {}, displayment = {}) {
     }
 }
 
+function createElement (tagName, options) {
+    const element = document.createElement(tagName)
+    Object.keys(options).forEach(key => {
+        element[key] = options[key]
+    })
+    return element
+}
+
 export {
-    getDefaultConfig
+    getDefaultConfig,
+    createElement
 }
