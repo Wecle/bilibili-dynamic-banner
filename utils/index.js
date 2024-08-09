@@ -1,9 +1,9 @@
 /**
  * @param {*} type layout 类型
  * @param {*} defaultStyle 默认样式
- * @param {*} displayment 位移方向
+ * @param {*} translate 位移方向
  */
-function getDefaultConfig (type = 'img', defaultStyle = {}, displayment = {}) {
+function getDefaultConfig (type = 'img', defaultStyle = {}, translate = {}) {
     return {
         type,
         defaultStyle: {
@@ -16,10 +16,10 @@ function getDefaultConfig (type = 'img', defaultStyle = {}, displayment = {}) {
             opacity: 1,
             ...defaultStyle
         },
-        displayment: {
+        translate: {
             direction: 'x',
-            distanceOffset: 300,
-            ...displayment
+            offset: 300,
+            ...translate
         }
     }
 }
